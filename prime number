@@ -1,0 +1,9 @@
+#prime number using recurssion
+def prime(num,den=2):
+    if den<=num//2+1:
+        if num %den==0:
+            return'not a prime number'
+        return 'prime number'
+    prime(num,den+1)
+num = 5
+print(prime(num))
