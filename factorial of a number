@@ -1,0 +1,8 @@
+#factorial of a number using recurssion
+def fact(num, res=1, val=1):
+    if val != num + 1:
+        res = res * val
+        return fact(num, res, val + 1)
+    return res
+num = 5
+print(fact(num))
