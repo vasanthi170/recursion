@@ -1,0 +1,11 @@
+#adding only even digits using recursion function
+def add(num):
+    if num == 0:
+        return 0
+    return even(num%10) + add(num//10)
+def even(rem):
+    if rem % 2== 0:
+        return rem
+    return 0
+num=1234
+print(add(num))
