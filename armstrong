@@ -1,0 +1,8 @@
+#Armstrong number using recursion
+def armstrong(num,power,res=0,dup = num):
+    if num == 0:
+        return res
+    res = (num%10)**power+res
+    return armstrong(num//10,power,res)
+num = 153
+print('armstrong' if armstrong(num,len(str(num)))==dup else 'not an armstrong')
