@@ -1,0 +1,7 @@
+#binary to integer using recursion
+def bin_int(num,pos=0,res=0):
+    if num == 0:
+        return res
+    return (num%10)*2**pos+bin_int(num//10,pos+1)
+num = 1110
+print(bin_int(num))
