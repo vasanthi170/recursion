@@ -1,0 +1,8 @@
+#integer to binary using recursion
+def int_bin(num,pos=1,res=0):
+    if num == 0:
+        return res
+    rem = num%2*pos + res
+    return rem+bin_int(num//2,pos*10)
+num = 14
+print(bin_int(num))
