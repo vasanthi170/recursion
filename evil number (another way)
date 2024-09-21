@@ -1,0 +1,9 @@
+#evil number using recursion
+def evil(num,count=0):
+    if num == 0:
+        return count%2==0
+    if num%2 == 1:
+        count = count+1
+    return evil(num//2,count)
+num= 17
+print('evil number'if evil(num) else 'odeous number')
