@@ -1,0 +1,11 @@
+#happy number using recursion
+def sq(num):
+    if num == 0:
+        return 0
+    return (num%10)**2+sq(num//10)
+def happy(num):
+    if num<9:
+        return num == 1 or num == 7
+    return sq(num)
+num = 19
+print('happy' if happy(num) else 'not happy')
